@@ -10,13 +10,12 @@
             padding: 50px;
             font-family: 'Cursive', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
+        .content {
+            position: relative;
+            z-index: 1;
             background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
         }
         h1 {
             color: #FFD700;
@@ -59,11 +58,11 @@
     </style>
 </head>
 <body>
-    
+    <div class="content">
     <h1>🎉 Alles Gute zum Geburtstag! 🎉</h1>
 
     <p class="english">Happy Birthday! </p>
-    <video controls autoplay>
+    <video controls autoplay muted loop>
         <source src="bdy.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
